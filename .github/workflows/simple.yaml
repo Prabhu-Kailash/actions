@@ -12,3 +12,8 @@ jobs:
         run: |
           npm -v
           node --version
+      - name: Python
+        run: |
+          import os
+          print(os.getcwd())
+        shell: python
