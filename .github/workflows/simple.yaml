@@ -17,3 +17,11 @@ jobs:
           import os
           print(os.getcwd())
         shell: python
+  windows-shell:
+    runs-on: windows-latest
+    steps:
+      - name: Powershell
+        run: Get-Location
+      - name: From Bash
+        run: pwd
+        shell: bash
